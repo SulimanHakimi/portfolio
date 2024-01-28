@@ -88,12 +88,15 @@ nav span {
 }
 /* about end */
 /* experience start */
-
+#experience{
+height: 100vh;
+background-color: azure;
+}
 /* end experience */
 
 /* projects */
 #projects {
-  height: 100vh;
+height: 170vh;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
@@ -110,7 +113,9 @@ nav span {
 }
 .cards-list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
+  gap: 50px;
+  padding: 0px 35px;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
@@ -147,4 +152,23 @@ nav span {
 .buttons a:hover{
   background-color: black;
   color: white;
+}
+/* end projects */
+/* contact start */
+#contact{
+  height: 100vh;
+  background-color: aliceblue;
+}
+/* contact end */
+
+.footer{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 10vh;
+background-color: rgb(224, 224, 224);
+}
+.footer span{
+  font-size: 18px;
+  font-weight: 700;
 }
