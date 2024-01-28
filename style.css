@@ -32,7 +32,7 @@ nav span {
 
 /* nav end */
 /* about start */
-#about {
+#home {
   height: 80vh;
   display: flex;
   justify-content: center;
@@ -89,7 +89,14 @@ nav span {
 .social_icons a {
   margin-left: 8px;
 }
+/* home end */
+/* about start */
+
+
+
+
 /* about end */
+
 /* experience start */
 #experience {
   height: 100vh;
