@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 * {
+  font-family: "Ubuntu", sans-serif;
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
-  text-decoration: none;
+}
+::selection {
+  background-color: black;
+  color: white;
 }
 a {
   color: black;
+  text-decoration: none;
 }
 body {
   padding: 0px 10%;
@@ -33,7 +37,7 @@ nav span {
 /* nav end */
 /* about start */
 #home {
-  height: 80vh;
+  height: 550px;
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -45,20 +49,18 @@ nav span {
   border-radius: 50%;
 }
 .right_info {
+  height: 230px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 230px;
   flex-direction: column;
 }
 .s_h {
   font-weight: bold;
-
   font-size: 18px;
 }
 .s_n {
   font-weight: bolder;
-
   font-size: 30px;
 }
 .s_f {
@@ -91,149 +93,149 @@ nav span {
 }
 /* home end */
 /* about start */
-#about{
-  height: 100vh;
-  background-color: rgb(255, 255, 255);
+#about {
+  height: 550px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
   text-align: center;
+  justify-content: space-around;
 }
-.about-content{
+.about-content {
+  width: 100%;
+  height: 500px;
   display: flex;
   justify-content: center;
-  gap: 20px;
-  align-items: center;
-  width: 100%;
-  height: 80%;
+  align-items: start;
+  padding-top: 60px;
 }
-.about-content img{
-  width: 30%;
-  height: 75%;
+.about-content img {
+  width: 300px;
+  height: 350px;
   border-radius: 30px;
 }
-.about-left-cont{
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-flex-direction: column;
-height: 82%;
-width: 55%;
-}
-.about-cards-list{
+.about-left-cont {
+  height: fit-content;
+  width: 700px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 60%;
-  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 0px;
 }
-.about-card{
+.about-cards-list {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.about-card {
+  height: 120px;
+  width: 270px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   border-radius: 20px;
   border: 1px solid;
-  height: 80%;
-  width: 45%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  margin-left: 25px;
 }
-.about-card p{
+.about-card p {
   padding: 3px 0px;
 }
 
-.about-card-title{
+.about-card-title {
   margin-top: 5px;
   font-weight: 700;
   font-size: 16px;
 }
-.about-card i{
+.about-card i {
   font-size: 22px;
 }
-.about-card-p{
+.about-card-p {
   font-size: 16px;
-font-weight: 500;
+  font-weight: 500;
 }
-.about-me-info{
-  padding: 0px 20px;
+.about-me-info {
   text-align: start;
   font-size: 17px;
   line-height: 25px;
+  padding: 0px 20px;
 }
 /* about end */
 
 /* experience start */
 #experience {
-  height: 100vh;
-  background-color: rgb(255, 255, 255);
+  height: 650px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
   flex-direction: column;
 }
-.experience-list{
+.experience-list {
+  width: 100%;
+  height: 300px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
-  height: 50%;
+  gap: 40px;
+
 }
-.experience-card{
-  border: 1px solid;
-  width: 45%;
+.experience-card {
   height: 100%;
-  border-radius: 20px;
+  width: 450px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  border: 1px solid;
 }
-.experience-name{
+.experience-name {
+  height: 180px;
   width: 100%;
-  height: fit-content;
   display: grid;
-  gap: 30px 10px;
-  height: 65%;
+  justify-items: start;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  gap: 30px 50px;
+  padding: 0px 60px;
+
 }
-.title-exp{
+.title-exp {
   font-size: 25px;
   font-family: 700;
 }
-.experience-name-vl{
+.experience-name-vl {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.experience-name-vl i{
+.experience-name-vl i {
   margin-bottom: 15px;
 }
-.name-level-exp{
-  padding: 4px 8px;
+.name-level-exp {
   display: flex;
   flex-direction: column;
   text-align: start;
+  padding: 4px 8px;
 }
-.name-level-exp span{
+.name-level-exp span {
   font-size: 18px;
   font-weight: 700;
 }
-
-
-
-
-
-
-
-
 
 /* end experience */
 
 /* projects */
 #projects {
-  height: 170vh;
+  height: fit-content;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
@@ -245,29 +247,30 @@ font-weight: 500;
   font-weight: bold;
 }
 .cards-list {
+  width: 100%;
   display: flex;
   justify-content: start;
-  gap: 50px;
-  padding: 0px 35px;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
+  gap: 50px;
+  margin-top: 50px;
+  padding:0px 35px 20px;
 }
 .card {
   width: 300px;
   height: 400px;
-  border: 1px solid black;
   display: flex;
-  border-radius: 20px;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
 }
 .card img {
+  height: 250px;
   width: 250px;
   background-size: cover;
   border-radius: 20px;
-  height: 250px;
 }
 .card span {
   font-weight: 700;
@@ -295,11 +298,11 @@ font-weight: 500;
 /* contact end */
 
 .footer {
+  height: 30vh;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  height: 30vh;
   background-color: rgb(247, 247, 247);
 }
 .footer span {
