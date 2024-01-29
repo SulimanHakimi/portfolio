@@ -35,7 +35,7 @@ nav span {
 }
 
 /* nav end */
-/* about start */
+/* home start */
 #home {
   height: 550px;
   display: flex;
@@ -130,7 +130,6 @@ nav span {
   display: flex;
   justify-content: start;
   align-items: center;
-  flex-wrap: wrap;
   gap: 25px;
 }
 .about-card {
@@ -163,7 +162,7 @@ nav span {
   text-align: start;
   font-size: 17px;
   line-height: 25px;
-  padding: 0px 20px;
+  padding: 0px 30px;
 }
 /* about end */
 
@@ -292,8 +291,33 @@ nav span {
 /* end projects */
 /* contact start */
 #contact {
-  height: 100vh;
-  background-color: aliceblue;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+.contact-info{
+  height: 60px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 20px;
+  border-radius: 25px;
+  border: 1px solid;
+}
+
+.contact-info-item a{
+  font-weight: 700;
+}
+.contact-info-item i{
+  background-color: rgb(192, 192, 192);
+  padding: 6px;
+  border-radius: 50%;
 }
 /* contact end */
 
@@ -303,7 +327,6 @@ nav span {
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(247, 247, 247);
 }
 .footer span {
   font-size: 18px;
