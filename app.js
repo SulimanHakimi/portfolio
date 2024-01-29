@@ -3,7 +3,7 @@ let cardsList = document.querySelector(".cards-list");
 
 fetch("https://api.example.com/data")
   .then((response) => response.json())
-  .then((data) => console.log(data))
+  .then((projects) => console.log(projects))
   .catch((error) => console.error("Error:", error));
 projects.forEach((projects) => {
   //    cardsList.innerHTML =
