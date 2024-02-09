@@ -36,6 +36,13 @@ let projects = [
     liveDemo: "https://sulimanhakimi.github.io/PasswordGenerator/",
     codeLink: "https://github.com/SulimanHakimi/PasswordGenerator.git",
   },
+  {
+    id: 6,
+    projectName: "Medical Website",
+    imageLink: "./img/Medical website.PNG",
+    liveDemo: "https://sulimanhakimi.github.io/Medical-Wbsite/",
+    codeLink: "https://github.com/SulimanHakimi/Medical-Wbsite.git",
+  },
 ];
 // /////// project data
 
