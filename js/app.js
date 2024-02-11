@@ -110,7 +110,15 @@ for (let i = 0; i < experience[1].length; i++) {
 // /////////////////////////////////
 let posts = [
   {
-    id: 1,
+    id: 4,
+    title: "Watch my YouTube videos how i build projects",
+    dateOfPost: "FEB 11,2024",
+    imageLink:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStJ6CY6jYVJ7gDp0ugJYhLQaWthq3IQyGxBQ&usqp=CAU",
+    description: `I take a video of every project I make and upload it to YouTube so that everyone can see my samples <a href="https://www.youtube.com/channel/UC_-ZTxcj6qqV1bUXTvHv17A">here</a>.`,
+  },
+  {
+    id: 3,
     title: "Playing in Kabul Elite chess competition",
     dateOfPost: "FEB 03,2024",
     imageLink: "./img/sulimanhakimiChess.jpeg",
@@ -127,7 +135,7 @@ let posts = [
       "I am proud to announce that I have reached the 7th place in the Cheragh University Medical terminology exam. It was a national and online exam. The entrance exam was held in four separate rounds, where I was among the top 10 students from the hundreds of participants in different medical fields and institutes. This achievement is the result of my hard work, dedication and passion for learning. I like to thank myself",
   },
   {
-    id: 3,
+    id: 1,
     title: "ICPC Asia West Kabul 2023",
     dateOfPost: "SEP 29,2023",
     imageLink:

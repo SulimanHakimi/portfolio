@@ -95,7 +95,9 @@ nav span {
   margin-left: 8px;
 }
 /* home end */
-
+.content-post a {
+  color: tomato;
+}
 /* post start */
 
 #posts {
