@@ -139,7 +139,7 @@ let posts = [
     title: "ICPC Asia West Kabul 2023",
     dateOfPost: "SEP 29,2023",
     imageLink:
-      "https://scontent.fkbl6-1.fna.fbcdn.net/v/t39.30808-6/383165889_122137072310007389_7666527922382381436_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=voueLqxPecIAX--m2Ua&_nc_ht=scontent.fkbl6-1.fna&oh=00_AfArLyFLHUFnVbeFlmHRbDtDd5ISF76xMgxgh-UjpzErDg&oe=65C91DE1",
+      "https://scontent.fkbl6-1.fna.fbcdn.net/v/t39.30808-6/382993434_122137072082007389_7813316522180292135_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=108&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=bPUAThkAjOwAX8Q_Mhn&_nc_ht=scontent.fkbl6-1.fna&oh=00_AfDq8zjUMT7pNNdcX96GoxChTtfSPRBXtXDUmN9u3D6qAw&oe=65D0D552",
     description:
       "I participated in the sixth round of the ICPC Asia West Continent Championship, a prestigious programming contest for college students ¹. Out of 50 teams, I ranked 23rd What made this experience even more remarkable was that I was the only person who did not have a computer science background among all the participants. This shows my passion, dedication, and talent for programming and problem-solving. I am proud of my accomplishment and eager to learn more and improve my skills.",
   },
