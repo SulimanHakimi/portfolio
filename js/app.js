@@ -6,38 +6,8 @@ let projects = [
     liveDemo: "https://sulimanhakimi.github.io/landing-page/",
     codeLink: "https://github.com/SulimanHakimi/assignment_1.git",
   },
-  {
+{
     id: 2,
-    projectName: "HomeTown",
-    imageLink: "./img/homwtown.jpeg",
-    liveDemo: "https://github.com/SulimanHakimi/scrimba_homeTown.git",
-    codeLink: "https://sulimanhakimi.github.io/scrimba_homeTown/",
-  },
-  {
-    id: 3,
-    projectName: "Calculator",
-    imageLink: "./img/calculator.jpeg",
-    liveDemo: "https://sulimanhakimi.github.io/calculator_1/",
-    codeLink: "https://github.com/SulimanHakimi/calculator_1.git",
-  },
-  {
-    id: 4,
-    projectName: "Random Quote Machine",
-    imageLink: "./img/random.jpeg",
-    liveDemo:
-      "https://sulimanhakimi.github.io/Build-Random-Quote-Machine-FreeCodeCamp/",
-    codeLink:
-      "https://github.com/SulimanHakimi/Build-Random-Quote-Machine-FreeCodeCamp.git",
-  },
-  {
-    id: 5,
-    projectName: "Password Generator",
-    imageLink: "./img/passGenerator.PNG",
-    liveDemo: "https://sulimanhakimi.github.io/PasswordGenerator/",
-    codeLink: "https://github.com/SulimanHakimi/PasswordGenerator.git",
-  },
-  {
-    id: 6,
     projectName: "Medical Website",
     imageLink: "./img/Medical website.PNG",
     liveDemo: "https://sulimanhakimi.github.io/Medical-Wbsite/",
