@@ -2,14 +2,14 @@ let projects = [
   {
     id: 1,
     projectName: "Landing Page",
-    imageLink: "./img/landing.jpeg",
+    imageLink: "/img/landing.jpeg",
     liveDemo: "https://sulimanhakimi.github.io/landing-page/",
     codeLink: "https://github.com/SulimanHakimi/assignment_1.git",
   },
   {
     id: 2,
     projectName: "Medical Website",
-    imageLink: "./img/Medical website.PNG",
+    imageLink: "/img/Medical website.PNG",
     liveDemo: "https://sulimanhakimi.github.io/Medical-Wbsite/",
     codeLink: "https://github.com/SulimanHakimi/Medical-Wbsite.git",
   },
@@ -107,7 +107,7 @@ let posts = [
     id: 3,
     title: "Playing in Kabul Elite chess competition",
     dateOfPost: "FEB 03,2024",
-    imageLink: "./img/sulimanhakimiChess.jpeg",
+    imageLink: "/img/sulimanhakimiChess.jpeg",
     description:
       "I had the opportunity to play in the Kabul Elite Chess Tournament, a fast-paced chess event attended by the best players in Kabul.  It was a challenging and rewarding experience as I faced opponents with different styles and strategies. I did not perform well in these matches, I won 3 games and lost the other 3.  I learned a lot from my mistakes and successes and improved my chess skills.  I also enjoyed the friendly atmosphere and camaraderie between the players. One of the most memorable moments of this tournament was meeting a young boy who was only 8 years old.  He played chess very well and impressed me with his talent and passion.  He was one of the rising stars of the Kabul chess scene and I hope to see him again in future tournaments.",
   },
