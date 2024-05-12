@@ -1,9 +1,11 @@
 const express = require("express");
 const app = express();
-app.listen(3000);
-app.use(express.static("public"))
+app.listen(3004);
+app.use(express.static(__dirname + "/public"));
+app.set("views", __dirname + "/views");
+app.set("view engine", "ejs");
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  res.render("index");
 });
 app.use((req, res) => {
   res.send("<h1>404 Not-Found</h1>");
