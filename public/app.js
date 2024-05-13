@@ -35,17 +35,17 @@ let projects = [
 for (let i = 0; i < projects.length; i++) {
   document.querySelector(
     ".cards-list"
-  ).innerHTML += ` <div id="${projects[i].id}" class="card">
-    <img src="${projects[i].imageLink}" alt="" />
-    <span>${projects[i].projectName}</span>
-    <div class="buttons">
-      <a
+  ).innerHTML += ` <div id="${projects[i].id}" class="w-[320px] h-[400px] flex flex-col justify-around overflow-hidden items-center border border-black rounded-2xl">
+    <img class="w-full h-3/5" src="${projects[i].imageLink}" alt="" />
+    <span class="h-1/5 flex justify-center font-semibold text-[18px] items-center">${projects[i].projectName}</span>
+    <div class="h-1/5">
+      <a class="py-2 px-4 rounded-xl font-semibold cursor-pointer border border-black hover:bg-black hover:text-white"
         target="_blank"
         href="${projects[i].codeLink}"
         >GitHub</a
       >
       <a
-      
+      class="py-2 px-4 rounded-xl font-semibold cursor-pointer border border-black hover:bg-black hover:text-white"
         target="_blank"
         href="${projects[i].liveDemo}"
         >Live Demo</a
@@ -65,7 +65,9 @@ let experience = [
   ],
   [
     { id: 1, name: "Git", level: "Excellent" },
-    { id: 1, name: "Node Js", level: "Fair" },
+    { id: 1, name: "Node Js", level: "Excellent" },
+    { id: 1, name: "Express Js", level: "Excellent" },
+    { id: 1, name: "Mongo DB", level: "Fair" },
   ],
 ];
 console.log(experience);
@@ -73,10 +75,10 @@ console.log(experience);
 for (let i = 0; i < experience[0].length; i++) {
   document.querySelector(
     ".experience-name-fr"
-  ).innerHTML += `<div class="experience-name-vl">
-<i class="fa-solid fa-circle-check"></i>
-<div class="name-level-exp">
-  <span>${experience[0][i].name}</span>
+  ).innerHTML += `<div class="flex items-strat  min-w-10">
+<i class="fa-solid fa-circle-check mt-2"></i>
+<div class="flex flex-col py-1 px-2">
+  <span class="font-semibold text-[18px]">${experience[0][i].name}</span>
   <p>${experience[0][i].level}</p>
 </div>
 </div>`;
@@ -85,10 +87,10 @@ for (let i = 0; i < experience[0].length; i++) {
 for (let i = 0; i < experience[1].length; i++) {
   document.querySelector(
     ".experience-name-se"
-  ).innerHTML += `<div class="experience-name-vl">
-  <i class="fa-solid fa-circle-check"></i>
-  <div class="name-level-exp">
-    <span>${experience[1][i].name}</span>
+  ).innerHTML += `<div class="flex items-strat  min-w-10">
+  <i class="fa-solid fa-circle-check mt-2"></i>
+  <div class="flex flex-col py-1 px-2">
+    <span class="font-semibold text-[18px]">${experience[1][i].name}</span>
     <p>${experience[1][i].level}</p>
   </div>
   </div>`;
@@ -124,8 +126,7 @@ let posts = [
     id: 1,
     title: "ICPC Asia West Kabul 2023",
     dateOfPost: "SEP 29,2023",
-    imageLink:
-      "https://scontent.fkbl6-1.fna.fbcdn.net/v/t39.30808-6/382993434_122137072082007389_7813316522180292135_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=108&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=bPUAThkAjOwAX8Q_Mhn&_nc_ht=scontent.fkbl6-1.fna&oh=00_AfDq8zjUMT7pNNdcX96GoxChTtfSPRBXtXDUmN9u3D6qAw&oe=65D0D552",
+    imageLink: "https://kateb.edu.af/wp-content/uploads/2022/09/IMG_1553.jpg",
     description:
       "I participated in the sixth round of the ICPC Asia West Continent Championship, a prestigious programming contest for college students ¹. Out of 50 teams, I ranked 23rd What made this experience even more remarkable was that I was the only person who did not have a computer science background among all the participants. This shows my passion, dedication, and talent for programming and problem-solving. I am proud of my accomplishment and eager to learn more and improve my skills.",
   },
@@ -133,16 +134,17 @@ let posts = [
 for (let i = 0; i < posts.length; i++) {
   document.querySelector(
     ".recent-posts-card-list"
-  ).innerHTML += ` <div class="posts-card">
+  ).innerHTML += ` <div class="h-fit w-[320px] m-2 flex xursor-pointer flex-col gap-2 mb-7 overflow-hidden">
   <img
+  class=" w-[300px] h-[200px]"
     src="${posts[i].imageLink}"
     alt=""
   />
 
-  <div class="post-data-info">
-    <span class="date-of-post">${posts[i].dateOfPost}</span>
-    <strong class="title-post">${posts[i].title}</strong>
-    <p class="content-post">
+  <div class="flex gap-2 flex-col items-start">
+    <span class="text-sm font-light">${posts[i].dateOfPost}</span>
+    <strong class="text-xl">${posts[i].title}</strong>
+    <p class="w-full text-[#505050] line-clamp-4 ">
     ${posts[i].description}
     </p>
   </div>

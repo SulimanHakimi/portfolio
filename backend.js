@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
-app.listen(3004);
+app.listen(3004 ,(req,res)=>{
+  console.log("app listining on port http://localhost:3004")
+});
 app.use(express.static(__dirname + "/public"));
 app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");

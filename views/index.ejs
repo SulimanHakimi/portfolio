@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Suliman Hakimi</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awsome link -->
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body class="px-[10%]">
     <div class="continer">
-      <nav>
-        <span>Suliman Hakimi</span>
-        <div class="nav-links">
+      <nav class="h-32 flex justify-between items-center">
+        <a href="#home" class="text-[22px] font-bold">Suliman Hakimi</a>
+        <div class="text-lg font-bold flex gap-8">
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
@@ -26,61 +29,86 @@
         </div>
       </nav>
       <div>
-        <section id="home">
-          <di class="left_img"><img src="img/me.jpeg" alt="" /></di>
-          <di class="right_info">
-            <span class="s_h">Hello, i'm</span>
-            <span class="s_n">Suliman Hakimi</span>
-            <span class="s_f">Frontend Developer</span>
-            <div class="info_btn">
-              <a id="down_cv" href="#" downlod>Download CV</a>
-              <a id="cont_me" href="mailto:afgsuliman50@gmail.com"
+        <section id="home" class="h-[100vh] flex justify-center items-center gap-12">
+          <div>
+            <img class="w-72 h-72 rounded-full" src="img/me.jpeg" alt="" />
+          </div>
+          <di class="h-72 flex justify-center gap-2 items-center flex-col">
+            <span class="text-[22px] font-bold">Hello, i'm</span>
+            <span class="font-bold text-[40px]">Suliman Hakimi</span>
+            <span class="text-[22px] font-bold">Frontend Developer</span>
+            <div class="flex gap-2">
+              <a
+                class="cursor-pointer py-2 px-4 rounded-lg border font-bold bg-white"
+                href="#"
+                downlod
+                >Download CV</a
+              >
+              <a
+                class="cursor-pointer py-2 px-4 rounded-lg border font-bold bg-black text-white"
+                href="mailto:afgsuliman50@gmail.com"
                 >Contact Me</a
               >
             </div>
-            <div class="social_icons">
+            <div class="flex gap-4">
               <a
+                class=""
                 href="https://www.linkedin.com/in/suliman-hakimi-6b4974298/?originalSubdomain=af"
-                ><i class="fa-brands fa-linkedin"></i
+                ><i class="fa-brands fa-linkedin fa-xl"></i
               ></a>
-              <a href="https://github.com/SulimanHakimi"
-                ><i class="fa-brands fa-github"></i
+              <a class="" href="https://github.com/SulimanHakimi"
+                ><i class="fa-brands fa-github fa-xl"></i
               ></a>
             </div>
           </di>
         </section>
-        <section id="posts">
-          <div class="header">
+        <section
+          class="posts min-h-[100vh] flex flex-col items-center justify-around"
+        >
+          <div class="pt-5 text-center">
             <p>Explore My</p>
-            <span class="title">Recent posts</span>
+            <span class="font-bold text-4xl">Recent posts</span>
           </div>
-          <div class="recent-posts-card-list"></div>
+          <div
+            class="recent-posts-card-list grid grid-cols-3 my-10 w-full"
+          ></div>
         </section>
-        <section id="about">
-          <div class="header">
+        <section id="about"
+          class="min-h-[100vh] w-full flex flex-col items-center text-center justify-around"
+        >
+          <div class="pt-5">
             <p>Get To Know More</p>
-            <span class="title">About Me</span>
+            <span class="font-bold text-4xl">About Me</span>
           </div>
-          <div class="about-content">
-            <img src="/img/myPic.jpeg" alt="" />
-            <div class="about-left-cont">
-              <div class="about-cards-list">
-                <div class="about-card">
-                  <i class="fa-solid fa-award">
-                    <p class="about-card-title">Experience</p>
-                    <p class="about-card-p">1+ Years</p>
-                    <p class="about-card-p">Frontend Development</p>
-                  </i>
+          <div class="w-full h-fit flex justify-center items-center flex-warp">
+            <img
+              class="w-[300px] h-[400px] rounded-lg"
+              src="/img/myPic.jpeg"
+              alt=""
+            />
+            <div
+              class="h-fit w-3/5 flex justify-around items-center flex-warp flex-col gap-5 py-2"
+            >
+              <div class="h-26 flex items-center gap-6">
+                <div
+                  class="h-28 border-black border w-64 rounded-2xl flex flex-col justify-center items-center"
+                >
+                  <i class="fa-solid fa-award fa-lg"> </i>
+
+                  <p class="font-semibold mt-3">Experience</p>
+                  <p class="font-medium">1+ Years</p>
+                  <p class="font-medium">Frontend Development</p>
                 </div>
-                <div class="about-card">
-                  <i class="fa-solid fa-graduation-cap">
-                    <p class="about-card-title">Education</p>
-                    <p class="about-card-p">pharmacy Bachelor Student</p>
-                    <p class="about-card-p">High School Degree</p>
-                  </i>
+                <div
+                  class="h-28 border-black border w-64 rounded-2xl flex flex-col justify-center items-center"
+                >
+                  <i class="fa-solid fa-graduation-cap fa-lg"></i>
+                  <p class="font-semibold mt-3">Education</p>
+                  <p class="font-medium">pharmacy Bachelor Student</p>
+                  <p class="font-medium">High School Degree</p>
                 </div>
               </div>
-              <p class="about-me-info">
+              <p class="text-start px-8">
                 Suliman Hakimi is a web developer and a pharmacy student from
                 Logar, Afghanistan. He started his education in therapeutic
                 medicine at Bayzid Rokhan University in 2022, but switched to
@@ -97,44 +125,62 @@
           </div>
         </section>
 
-        <section id="experience">
-          <div class="header">
+        <section id="experience"
+          class="min-h-[100vh] flex flex-col items-center justify-start gap-14"
+        >
+          <div class="pt-5 text-center">
             <p>Explore My</p>
-            <span class="title">Experience</span>
+            <span class="font-bold text-4xl">Experience</span>
           </div>
-          <div class="experience-list">
-            <div class="experience-card">
-              <h1 class="title-exp">Frontend Development</h1>
-              <div class="experience-name-fr"></div>
+          <div class="flex justify-center items-center flex-warp gap-10">
+            <div
+              class="h-96 rounded-2xl w-96 flex justify-start py-10 gap-10 items-center flex-col border-black border"
+            >
+              <h1 class="text-2xl font-bold">Frontend Development</h1>
+              <div
+                class="experience-name-fr min-h-28 grid grid-cols-2 gap-5 px-10 w-full"
+              ></div>
             </div>
 
-            <div class="experience-card">
-              <h1 class="title-exp">Backend Development</h1>
-              <div class="experience-name-se"></div>
+            <div
+              class="h-96 rounded-2xl w-96 flex justify-start py-10 gap-10 items-center flex-col border-black border"
+            >
+              <h1 class="text-2xl font-bold">Backend Development</h1>
+              <div
+                class="experience-name-se justify-items-start px-10 h-32 grid grid-cols-2 gap-5"
+              ></div>
             </div>
           </div>
         </section>
 
-        <section id="projects">
-          <div class="header">
+        <section id="projects"
+          class="min-h-[100vh] flex justify-around items-center gap-10 flex-col"
+        >
+          <div class="pt-5 text-center">
             <p>Browse My Recent</p>
-            <span class="title">Projects</span>
+            <span class="font-bold text-4xl">Projects</span>
           </div>
-          <div class="cards-list"></div>
+          <div class="cards-list w-full grid grid-cols-3 gap-y-5"></div>
         </section>
-        <section id="contact">
-          <div>
-            <p>How to</p>
-            <span class="title">Contact</span>
+        <section id="contact"
+          class="min-h-[400px] flex justify-center items-center flex-col gap-7"
+        >
+          <div class="text-center">
+            <span class="font-bold text-4xl">Contact With Me</span>
           </div>
-          <div class="contact-info">
-            <div class="contact-info-item">
-              <i class="fa-solid fa-envelope"></i>
-              <a href="mailto:afgsuliman50@gmail.com">Afgsuliman50@gmail.com</a>
+          <div
+            class="h-10 w-96 h-16 flex justify-center gap-5 items-center rounded-xl border border-black"
+          >
+            <div class="">
+              <i class="fa-solid fa-envelope fa-lg"></i>
+              <a class="font-semibold" href="mailto:afgsuliman50@gmail.com"
+                >Afgsuliman50@gmail.com</a
+              >
             </div>
-            <div class="contact-info-item">
-              <i class="fa-solid fa-envelope"></i>
+            <div class="">
+              <i class="fa-solid fa-envelope fa-lg"></i>
               <a
+                class="font-semibold"
                 href="https://www.linkedin.com/in/suliman-hakimi-6b4974298/?originalSubdomain=af"
                 >linkedin</a
               >
@@ -143,7 +189,7 @@
         </section>
       </div>
       <div class="footer">
-        <div class="nav-links">
+        <div class="text-lg font-semibold flex gap-8">
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
