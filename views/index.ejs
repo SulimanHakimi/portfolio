@@ -1,42 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Suliman Hakimi</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- tailwind css cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- font awsome link -->
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body class="px-[10%]">
+  <%- include('partial/head') %>
+  <body class="lg:px-[8%] px-[5%]">
     <div class="continer">
-      <nav class="h-32 flex justify-between items-center">
+      <nav class="lg:h-32 h-24 flex justify-between items-center">
         <a href="#home" class="text-[22px] font-bold">Suliman Hakimi</a>
-        <div class="text-lg font-bold flex gap-8">
+        <div class="hidden md:flex text-lg font-bold lg:flex gap-8">
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
+        <i class="fa-solid fa-bars lg:hidden md:hidden fa-xl cursor-pointer"></i>
       </nav>
       <div>
-        <section id="home" class="h-[650px] flex justify-center items-center gap-12">
+        <section
+          id="home"
+          class="lg:h-[650px] h-[450px] flex justify-center items-center gap-0 lg:gap-12"
+        >
           <div>
-            <img class="w-72 h-72 rounded-full" src="img/me.jpeg" alt="" />
+            <img class="lg:w-72 lg:h-72 hidden rounded-full" src="img/me.jpeg" alt="" />
           </div>
-          <di class="h-72 flex justify-center gap-2 items-center flex-col">
-            <span class="text-[22px] font-bold">Hello, i'm</span>
-            <span class="font-bold text-[40px]">Suliman Hakimi</span>
-            <span class="text-[22px] font-bold">Frontend Developer</span>
+          <di class="lg:h-72 h-96 flex justify-center gap-2 items-center flex-col">
+            <span class="lg:text-[22px] text-[20px] font-bold">Hello, i'm</span>
+            <span class="font-bold text-[34px] lg:text-[40px]">Suliman Hakimi</span>
+            <span class="lg:text-[22px] text-[20px] font-bold">Frontend Developer</span>
             <div class="flex gap-2">
               <a
                 class="cursor-pointer py-2 px-4 rounded-lg border font-bold bg-white"
@@ -70,28 +58,29 @@
             <span class="font-bold text-4xl">Recent posts</span>
           </div>
           <div
-            class="recent-posts-card-list grid grid-cols-3 my-10 w-full"
+            class="recent-posts-card-list grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-3 my-10 w-full"
           ></div>
         </section>
-        <section id="about"
+        <section
+          id="about"
           class="min-h-[650px] w-full flex flex-col items-center text-center justify-around"
         >
           <div class="pt-5">
             <p>Get To Know More</p>
             <span class="font-bold text-4xl">About Me</span>
           </div>
-          <div class="w-full h-fit flex justify-center items-center flex-warp">
+          <div class="w-full h-fit flex-col my-10=lg:flex-row flex justify-center items-center">
             <img
-              class="w-[300px] h-[400px] rounded-lg"
+              class="lg:w-[300px] lg:h-[400px] w-96 h-96 rounded-lg"
               src="/img/myPic.jpeg"
               alt=""
             />
             <div
-              class="h-fit w-3/5 flex justify-around items-center flex-warp flex-col gap-5 py-2"
+              class="h-fit w-3/3 lg:w-3/5 flex justify-around items-center flex-warp flex-col gap-5 lg:py-2 py-5"
             >
-              <div class="h-26 flex items-center gap-6">
+              <div class="h-26 flex flex-row items-center gap-5">
                 <div
-                  class="h-28 border-black border w-64 rounded-2xl flex flex-col justify-center items-center"
+                  class="h-28 border-black border lg:w-64 w-56 rounded-2xl flex flex-col justify-center items-center"
                 >
                   <i class="fa-solid fa-award fa-lg"> </i>
 
@@ -100,7 +89,7 @@
                   <p class="font-medium">Frontend Development</p>
                 </div>
                 <div
-                  class="h-28 border-black border w-64 rounded-2xl flex flex-col justify-center items-center"
+                  class="h-28 border-black border lg:w-64 w-56 rounded-2xl flex flex-col justify-center items-center"
                 >
                   <i class="fa-solid fa-graduation-cap fa-lg"></i>
                   <p class="font-semibold mt-3">Education</p>
@@ -108,7 +97,7 @@
                   <p class="font-medium">High School Degree</p>
                 </div>
               </div>
-              <p class="text-start px-8">
+              <p class="text-start lg:px-8 px-2">
                 Suliman Hakimi is a web developer and a pharmacy student from
                 Logar, Afghanistan. He started his education in therapeutic
                 medicine at Bayzid Rokhan University in 2022, but switched to
@@ -125,16 +114,17 @@
           </div>
         </section>
 
-        <section id="experience"
-          class="min-h-[650px] flex flex-col items-center justify-start gap-14"
+        <section
+          id="experience"
+          class="min-h-[550px] flex flex-col items-center justify-start md:gap-14 sm:gap-10 lg:gap-14"
         >
           <div class="pt-5 text-center">
             <p>Explore My</p>
             <span class="font-bold text-4xl">Experience</span>
           </div>
-          <div class="flex justify-center items-center flex-warp gap-10">
+          <div class="flex justify-center flex-col lg:flex-row md:flex-row items-center gap-10">
             <div
-              class="h-96 rounded-2xl w-96 flex justify-start py-10 gap-10 items-center flex-col border-black border"
+              class="h-96 rounded-2xl md:w-80 w-96  flex justify-start py-10 gap-10 items-center flex-col border-black border"
             >
               <h1 class="text-2xl font-bold">Frontend Development</h1>
               <div
@@ -143,7 +133,7 @@
             </div>
 
             <div
-              class="h-96 rounded-2xl w-96 flex justify-start py-10 gap-10 items-center flex-col border-black border"
+              class="h-96 rounded-2xl w-96 md:w-80 flex justify-start py-10 gap-10 items-center flex-col border-black border"
             >
               <h1 class="text-2xl font-bold">Backend Development</h1>
               <div
@@ -153,23 +143,25 @@
           </div>
         </section>
 
-        <section id="projects"
-          class="min-h-[650px] flex justify-around items-center gap-10 flex-col"
+        <section
+          id="projects"
+          class="min-h-[650px] flex justify-around items-center my-10 gap-10 flex-col"
         >
           <div class="pt-5 text-center">
             <p>Browse My Recent</p>
             <span class="font-bold text-4xl">Projects</span>
           </div>
-          <div class="cards-list w-full grid grid-cols-3 gap-y-5"></div>
+          <div class="cards-list w-full grid md:grid-cols-2 grid-cols-1 justify-items-center lg:grid-cols-3 gap-y-5"></div>
         </section>
-        <section id="contact"
+        <section
+          id="contact"
           class="min-h-[550px] flex justify-center items-center flex-col gap-7"
         >
           <div class="text-center">
             <span class="font-bold text-4xl">Contact With Me</span>
           </div>
           <div
-            class="h-10 w-96 h-16 flex justify-center gap-5 items-center rounded-xl border border-black"
+            class="w-96 h-16 flex justify-center gap-10 lg:gap-5 items-center rounded-xl border border-black"
           >
             <div class="">
               <i class="fa-solid fa-envelope fa-lg"></i>
@@ -195,7 +187,9 @@
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
-        <span class="font-medium text-lg">Copyright © Suliman Hakimi 2024. All Rights Reserved</span>
+        <span class="font-medium lg:text-lg text-md"
+          >Copyright © Suliman Hakimi 2024. All Rights Reserved</span
+        >
       </div>
     </div>
     <script src="app.js"></script>
