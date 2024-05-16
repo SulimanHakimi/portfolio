@@ -77,7 +77,7 @@ let projects = [
 for (let i = 0; i < projects.length; i++) {
   document.querySelector(
     ".cards-list"
-  ).innerHTML += ` <div id="${projects[i].id}" class="w-[320px] h-[400px] flex flex-col justify-around overflow-hidden items-center border border-black rounded-2xl">
+  ).innerHTML += ` <div id="${projects[i].id}" class="w-[320px] shadow-lg h-[400px] flex flex-col justify-around overflow-hidden items-center border border-black rounded-2xl">
     <img class="w-full h-4/6" src="${projects[i].imageLink}" alt="" />
     <span class="h-1/6 flex justify-center font-semibold text-[18px] items-center">${projects[i].projectName}</span>
     <div class="h-1/6">
