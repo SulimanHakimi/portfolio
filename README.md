@@ -5,7 +5,6 @@ This is my portfolio website where I showcase my projects, skills, and achieveme
 
 ## Website Link
 
-[https://sulimanhakimi.github.io/portfolio/]
 
 ## Website Screenshot
 <img src="./img/CapturePortf.PNG">
